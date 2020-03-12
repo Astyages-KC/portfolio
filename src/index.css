@@ -1,13 +1,591 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Federo', serif;
+}
+/* 
+a {
+  text-decoration: none;
+  color: black;
+}
+*/
+
+.app {
+  height: 100%;}
+
+p {
+  margin: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.home {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e7f1f1+1,7cb3bc+52,685d99+100 */
+  background: linear-gradient(to bottom,  #93c4c0 3%,#c4e4c5 60%,#faead1 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7f1f1', endColorstr='#685d99',GradientType=0 );
+  height: 100%;
+  min-height: 76vh;
+  width: 100%;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.8);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 30px 0px;
+  text-align: center;
 }
+.home > a {
+  text-decoration: none;
+}
+.home > a:hover {
+  color: rgb(6, 77, 77);
+  text-decoration: underline;
+}
+
+.imgDiv {
+  grid-column: 1/2;
+  padding: 40px 10px 0px 40px;
+}
+.imgDiv> img {
+   height: 300px;
+   width: auto;
+   padding: 10px;
+   border: 1px solid rgba(0, 0, 0, 0.5);
+   background-color: rgb(255, 255, 255);
+}
+
+.aboutDiv {
+  grid-column: 2/3;
+  padding: 40px;
+  text-align: justify;
+}
+.aboutDiv > p {
+    margin: 0;
+    padding: 0;
+}
+
+.homeInfo {
+  grid-column: 3/4;
+  text-align: start;
+  padding: 80px 40px 0px 40px
+}
+.homeInfo > a {
+  color: rgb(9, 119, 119);
+  text-decoration: none;
+  display: block;
+  margin-top: 14px;
+}
+.homeInfo > a:hover {
+  color: rgb(6, 77, 77);
+  text-decoration: underline;
+}
+.homeInfo > p {
+  margin-top: 14px;
+}
+.email {
+  color: rgb(9, 119, 119);
+  text-decoration: none;
+}
+.email:hover {
+  color: rgb(6, 77, 77);
+  text-decoration: underline;
+}
+
+
+.resume {
+  height: 100%;
+  /* min-height: 90vh; */
+  width: 100%;
+  display: inline-block;
+  margin: 0;
+  text-align: center;
+  justify-content: center;
+  background: linear-gradient(to bottom,  #93c4c0 3%,#c4e4c5 60%,#faead1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7f1f1', endColorstr='#685d99',GradientType=0 ); /* IE6-9 */
+}
+
+.resume > img {
+  height: 130vh;
+  width: auto;
+  padding: 20px 0px 20px 0px;
+  text-align: center;
+} 
+
+.downloadResume {
+  width: auto;
+  display: block;
+  padding-top: 18px;
+  margin: 0;
+  font-size: 18px;
+}
+
+.downloadResume > a {
+  color: rgb(9, 119, 119);
+  text-decoration: none;
+}
+
+.downloadResume > a:hover {
+  color: rgb(6, 77, 77);
+  text-decoration: underline;
+}
+
+.scale-in-center {
+	-webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Expletus+Sans|Trochut|Yeseva+One&display=swap');
+.tracking-in-expand {
+  font-family: 'Expletus Sans', 'Federo', 'Yeseva One', 'Trochut', 'Georgia', serif;
+  font-size: 60px;
+  display: block;
+  justify-content: center;
+  padding: 15px 0px 25px 0px;
+	-webkit-animation: tracking-in-expand 1s cubic-bezier(0.215, 0.1, 0.355, 1.000) both;
+	        animation: tracking-in-expand 1s cubic-bezier(0.215, 0.1, 0.355, 1.000) both;
+}
+
+ @-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+ @-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.projects {
+  height: 100%;
+  min-height: 78vh;
+  width: 100%;
+  background: linear-gradient(to bottom,  #93b2c4 3%,#c4cce4 60%,#faedd1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  font-size: 18px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  justify-items: center;
+  flex-direction: column;
+  padding-top: 16px;
+  padding-bottom: 30px;
+}
+.projectHeader{
+  padding-top: 25px;
+  grid-row: 1/2;
+  grid-column: 1/2;
+  justify-self: center;
+  text-align: center;
+  font-size: 16px;
+  display: block;
+}
+.projectHeader > h1 {
+  margin: 0;
+  color: rgba(0, 0, 0, 0.8);
+}
+.note {
+  padding-top: 15px;
+  grid-row: 2/3;
+  grid-column: 1/2;
+  justify-self: center;
+  text-align: center;
+  font-size: 17px;
+  display: block;
+  color: rgba(0, 0, 0, 0.8);
+  display: block;
+}
+.project1 {
+  grid-row: 3/4;
+  padding-top: 15px;
+  justify-self: center;
+  text-align: center;
+}
+.project1 > p {
+  color: rgba(0, 0, 0, 0.8);
+  display: block;
+  margin-top: 10px;
+}
+.project1 > a {
+  color: rgb(9, 119, 119);
+  text-decoration: none;
+  font-size: 22px;
+  margin-top: 14px;
+}
+.project1 > a:hover {
+  color: rgb(6, 77, 77);
+  text-decoration: underline;
+}
+.project1 > a > iframe {
+  display: block;
+  width: 860px;
+  height: 550px;
+  margin-top: 12px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: rgb(255, 255, 255);
+}
+.project2 {
+  grid-row: 4/5;
+  justify-self: center;
+  text-align: center;
+  padding: 10px;
+}
+.project2 > p {
+  color: rgba(0, 0, 0, 0.8);
+  display: block;
+  margin-top: 10px;
+}
+.project2 > a {
+  color: rgb(9, 119, 119);
+  text-decoration: none;
+  font-size: 22px;
+  margin-top: 14px;
+}
+.project2 > a:hover {
+  color: rgb(6, 77, 77);
+  text-decoration: underline;
+}
+.project2 > a > iframe {
+  display: block;
+  width: 860px;
+  height: 550px;
+  margin-top: 12px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: rgb(255, 255, 255);
+}
+.project3 {
+  grid-row: 5/6;
+  justify-self: center;
+  text-align: center;
+  padding: 10px;
+}
+.project3 > p {
+  color: rgba(0, 0, 0, 0.8);
+  display: block;
+  margin-top: 10px;
+}
+.project3 > a {
+  color: rgb(9, 119, 119);
+  text-decoration: none;
+  font-size: 22px;
+  margin-top: 14px;
+}
+.project3 > a:hover {
+  color: rgb(6, 77, 77);
+  text-decoration: underline;
+}
+.project3 > a > iframe {
+  display: block;
+  width: 860px;
+  height: 550px;
+  margin-top: 12px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: rgb(255, 255, 255);
+}
+.project4 {
+  grid-row: 6/7;
+  justify-self: center;
+  text-align: center;
+  padding: 10px;
+}
+.project4 > p {
+  color: rgba(0, 0, 0, 0.8);
+  display: block;
+  margin-top: 10px;
+}
+.project4 > a {
+  color: rgb(9, 119, 119);
+  text-decoration: none;
+  font-size: 22px;
+  margin-top: 14px;
+}
+.project4 > a:hover {
+  color: rgb(6, 77, 77);
+  text-decoration: underline;
+}
+.project4 > a > iframe {
+  display: block;
+  width: 510px;
+  height: 410px;
+  margin-top: 12px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: rgb(255, 255, 255);
+}
+.gameHeader{
+  padding-top: 25px;
+  grid-row: 7/8;
+  justify-self: center;
+  text-align: center;
+  font-size: 16px;
+  display: block;
+}
+.gameHeader > h1 {
+  margin: 0;
+  color: rgba(0, 0, 0, 0.8);
+}
+.game1 {
+  grid-row: 8/9;
+  justify-self: center;
+  text-align: center;
+  padding: 10px;
+}
+.game1 > p {
+  color: rgba(0, 0, 0, 0.8);
+  display: block;
+  margin-top: 10px;
+}
+.game1 > a {
+  color: rgb(9, 119, 119);
+  text-decoration: none;
+  font-size: 22px;
+  margin-top: 14px;
+}
+.game1 > a:hover {
+  color: rgb(6, 77, 77);
+  text-decoration: underline;
+}
+.game1 > a > iframe {
+  display: block;
+  width: 860px;
+  height: 550px;
+  margin-top: 12px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: rgb(255, 255, 255);
+}
+.game1 > a > img {
+  display: block;
+  width: 860px;
+  height: auto;
+  margin-top: 12px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: rgb(255, 255, 255);
+}
+.game2 {
+  grid-row: 9/10;
+  justify-self: center;
+  text-align: center;
+  padding: 10px;
+}
+.game2 > p {
+  color: rgba(0, 0, 0, 0.8);
+  display: block;
+  margin-top: 10px;
+}
+.game2 > a {
+  color: rgb(9, 119, 119);
+  text-decoration: none;
+  font-size: 22px;
+  margin-top: 14px;
+}
+.game2 > a:hover {
+  color: rgb(6, 77, 77);
+  text-decoration: underline;
+}
+.game2 > a > iframe {
+  display: block;
+  width: 860px;
+  height: 550px;
+  margin-top: 12px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: rgb(255, 255, 255);
+}
+
+.navLink {
+  text-decoration: none;
+  color: rgb(9, 119, 119);
+}
+
+.navLink:hover {
+  color: rgb(6, 77, 77);
+  text-decoration: underline;
+}
+
+.navLinkActive {
+  color: rgb(6, 77, 77);
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1200px) {
+  .project1 > a > iframe {
+    width: 600px;
+  }
+  .project2 > a > iframe {
+    width: 600px;
+  }
+  .project3 > a > iframe {
+    width: 600px;
+  }
+  .project4 > a > iframe {
+    width: 600px;
+  }
+  .game1 > a > iframe {
+    height: 440px;
+    width: 600px;
+  }
+  .game1 > a > img {
+    width: 600px;
+  }
+  .game2 > a > iframe {
+    height: 440px;
+    width: 600px;
+  }
+  .resume > img {
+    height: 85vh;
+    width: auto;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+  } 
+}
+
+@media screen and (max-width: 1000px) {
+  .home {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-gap: 20px;
+    flex-direction: row;
+  }
+  .imgDiv {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding: 10px 20px;
+  }
+  .homeInfo {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: center;
+    padding: 10px 20px;
+  }
+  .aboutDiv {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    padding: 10px 40px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .project1 > a > iframe {
+    width: 460px;
+  }
+  .project2 > a > iframe {
+    width: 460px;
+  }
+  .project3 > a > iframe {
+    width: 460px;
+  }
+  .project4 > a > iframe {
+    width: 460px;
+  }
+  .game1 > a > iframe {
+    height: 320px;
+    width: 460px;
+  }
+  .game1 > a > img {
+    width: 460px;
+  }
+  .game2 > a > iframe {
+    height: 320px;
+    width: 460px;
+  }
+  .tracking-in-expand {
+    padding: 25px 0 0 0;
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .project1 > a > iframe {
+    display: inline-block;
+    width: 250px;
+  }
+  .project2 > a > iframe {
+    display: inline-block;
+    width: 250px;
+  }
+  .project3 > a > iframe {
+    display: inline-block;
+    width: 250px;
+  }
+  .project4 > a > iframe {
+    display: inline-block;
+    width: 250px;
+  }
+  .game1 > a > iframe {
+    display: inline-block;
+    height: 200px;
+    width: 250px;
+  }
+  .game1 > a > img {
+    display: inline-block;
+    width: 250px;
+  }
+  .game2 > a > iframe {
+    display: inline-block;
+    height: 200px;
+    width: 250px;
+  }
+  .resume > img {
+    height: 56vh;
+    width: auto;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+  }
+  .resume {
+    height: 80vh;
+  }
+  .tracking-in-expand {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .home {
+    font-size: 16px;
+  }
+  .imgDiv > img {
+    height: 200px;
+  }
+  .resume > img {
+    height: 48vh;
+  }
+} 
